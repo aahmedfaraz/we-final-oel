@@ -19,7 +19,6 @@ router.get('/', async (req, res) => {
 // @desc    Add new car
 // @access  Public
 router.post('/', async (req, res) => {
-    console.log(req.body);
     try {
         const {brand, model, price} = req.body;
         if(brand && model && price) {
